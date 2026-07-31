@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-beacon: #1cbac8;
+  --color-beacon-deep: #0e6f78;
+  --font-display: "Futura", "Avenir Next", "Century Gothic", "Segoe UI",
+    system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-3xl px-5;
+  }
+  .section-h {
+    @apply font-display text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl;
+  }
+  .kicker {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-beacon;
+  }
+  .prose-archive {
+    @apply text-[0.95rem] leading-relaxed text-zinc-400;
+  }
+  .prose-archive p + p {
+    @apply mt-4;
+  }
+  .quoted {
+    @apply border-l-2 border-beacon-deep pl-4 text-[0.95rem] leading-relaxed text-zinc-300 italic;
+  }
+}
