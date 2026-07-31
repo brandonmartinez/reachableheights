@@ -21,7 +21,7 @@ result, they must not think the band is playing.
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | The five song posts + the 2018 post   | The WordPress RSS feed, captured by the Internet Archive on **2018-12-04** (`web.archive.org/web/20181204190030id_/http://www.reachableheights.com/feed/`) — quoted **verbatim** |
 | Post dates                            | `pubDate` in that same feed                                                                                                                         |
-| Audio                                 | **Not hosted.** All five players are `w.soundcloud.com` embeds pointing at `soundcloud.com/reachableheights`                                          |
+| Audio                                 | **Azure Blob** — `martinezmediaclients.blob.core.windows.net/reachableheights/tracks/`, uploaded 2026-07-31 from the band's own Logic bounces. *Great Are You Lord* remains a `w.soundcloud.com` embed |
 | Logo, wordmark, starfield, treeline   | `Documents/Clients/Reachable Heights/site/img/` — the original 2018 holding-page assets (layered PSD/AI sources also survive)                        |
 | Worship EP / Christmas EP covers      | `Documents/Clients/Reachable Heights/Media/Album Art/`                                                                                               |
 | The unreleased catalog (29 + 21)      | Filesystem survey of `/Volumes/Audio/Logic/Reachable Heights` (~54 GB of Logic sessions); years are folder **mtimes**, not release dates             |
@@ -45,17 +45,60 @@ source file is black-on-transparent and disappears on a dark page.
 - **Never invent or correct content.** Every quoted line is verbatim from 2016 /
   2018. Where a sentence reads oddly ("Checkout our SoundCloud account"), that is
   how it was written. Do not fix it.
-- **Do not host audio here.** The owner's decision, 2026-07-31: the archive
-  presents *what was actually published* — the five SoundCloud tracks — and
-  nothing else. The ~16 bounced mixes of unreleased originals stay private.
+- **Ten of the eleven recordings are self-hosted; the covers are not.** The
+  owner's decision was revised 2026-07-31: the four 2016 originals plus six
+  finished-but-never-posted mixes stream from Azure Blob (see "Audio & the
+  player"). Everything still withheld is withheld on purpose — guide tracks,
+  half-mixes, working drafts, and the 21 covers.
 - **Do not host the covers.** The 21 covers are other writers' songs. They are
-  listed by title only. The one cover that is embedded, *Great Are You Lord*, is
-  the band's own already-public SoundCloud upload, embedded from SoundCloud
-  rather than rehosted.
-- **Titles are fine to list; recordings are not.** The unreleased catalog exists
-  on the page as a list of names deliberately.
-- If SoundCloud ever disappears, the players die with it. `#story` says so; keep
-  that honest.
+  listed by title only. The one cover on the page, *Great Are You Lord*, stays a
+  SoundCloud embed — it is the band's own already-public upload, and no local
+  mix of it survives.
+- **Titles are fine to list; unmixed recordings are not.** The unreleased
+  catalog exists on the page as a list of names deliberately. The nine audible
+  titles in it are marked ▶ and link nowhere else.
+- *Great Are You Lord* is the one player that dies if SoundCloud does. `#story`
+  says exactly that; keep it honest.
+
+## Audio & the player
+
+Audio is **not** in this repo. It streams from a public Azure Blob container:
+
+```
+https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/<slug>.mp3
+```
+
+Ten files, 53 MB, uploaded 2026-07-31 from
+`~/src/_archive/_staging/reachableheights-audio/` — that staging tree's
+`README.md` carries the per-file provenance and the SoundCloud duration-match
+table used to identify the four published mixes. The container is **Blob-level**
+anonymous access, never Container-level (which would allow listing).
+
+`src/player.js` (shared with blythe-band and lostinsanity) is a ~165-line
+vanilla-JS sticky bar. The markup contract:
+
+- A track is `.track[data-src][data-seconds]`, with `.track-btn`, `.track-title`.
+- Its nearest `[data-playlist]` ancestor scopes auto-advance;
+  `data-record` is the label shown in the bar. `closest()` matches the element
+  itself, so a lone track can carry both.
+- The bar is `#player` with `#pl-{play,prev,next,close,title,record,cur,dur,seek}`.
+
+**Tailwind v4 trap — read this before touching a track title.** Utilities beat
+`@layer components` regardless of selector specificity, so a `text-zinc-100`
+utility on `<h3 class="track-title">` silently defeats
+`.track.is-active .track-title { @apply text-beacon; }` with no error. Resting
+styles for `.track-title` therefore live in `styles/tailwind.css`; do not add
+font/size/color utilities to those `<h3>`s.
+
+Verify every URL after an upload:
+
+```sh
+grep -o 'data-src="[^"]*"' src/index.html | cut -d'"' -f2 | \
+  while read u; do printf '%s %s\n' "$(curl -s -o /dev/null -w '%{http_code}' -r 0-1 "$u")" "$u"; done
+```
+
+`206` is correct (ranged request). Anything else means the blob is missing or
+the container's access level was reset.
 
 ## Deliberately excluded — do not add these
 

@@ -33,4 +33,58 @@
   .quoted {
     @apply border-l-2 border-beacon-deep pl-4 text-[0.95rem] leading-relaxed text-zinc-300 italic;
   }
+
+  /* ── player ─────────────────────────────────────────────────────────
+     Resting colors live here, not as utilities in the markup. In
+     Tailwind v4 a utility beats @layer components no matter the
+     selector, so `text-zinc-100` on the element would silently defeat
+     `.track.is-active .track-title`. */
+  .track-btn {
+    @apply mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-full border border-zinc-700 text-zinc-400 transition;
+  }
+  .track-btn:hover {
+    @apply border-beacon bg-beacon text-black;
+  }
+  .track.is-active .track-btn {
+    @apply border-beacon bg-beacon text-black;
+  }
+  .track-title {
+    @apply font-display text-xl font-bold text-zinc-100;
+  }
+  .track.is-active .track-title {
+    @apply text-beacon;
+  }
+  .track-seek {
+    @apply h-0.5 w-full overflow-hidden rounded bg-zinc-800;
+  }
+  .track-fill {
+    @apply h-full w-0 rounded bg-beacon;
+  }
+  .track-elapsed {
+    @apply text-zinc-600;
+  }
+  .pl-btn {
+    @apply grid h-9 w-9 shrink-0 place-items-center rounded-full text-zinc-400 transition hover:bg-zinc-800 hover:text-zinc-100;
+  }
+  .pl-btn-main {
+    @apply h-11 w-11 bg-beacon text-black hover:bg-beacon hover:text-black;
+  }
+  .seek {
+    --pct: 0%;
+    @apply h-1 w-full cursor-pointer appearance-none rounded-full bg-zinc-800;
+    background-image: linear-gradient(
+      to right,
+      var(--color-beacon) var(--pct),
+      transparent var(--pct)
+    );
+  }
+  .seek::-webkit-slider-thumb {
+    @apply h-3 w-3 appearance-none rounded-full bg-beacon;
+  }
+  .seek::-moz-range-thumb {
+    @apply h-3 w-3 appearance-none rounded-full border-0 bg-beacon;
+  }
+  body.has-player {
+    @apply pb-24;
+  }
 }

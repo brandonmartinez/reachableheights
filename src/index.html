@@ -66,6 +66,7 @@
     <nav class="sticky top-0 z-10 border-b border-zinc-800 bg-zinc-950/95 backdrop-blur">
       <div class="wrap flex gap-5 overflow-x-auto py-3 font-mono text-xs uppercase tracking-wider">
         <a href="#music" class="whitespace-nowrap hover:text-beacon">The music</a>
+        <a href="#unreleased" class="whitespace-nowrap hover:text-beacon">Six more</a>
         <a href="#band" class="whitespace-nowrap hover:text-beacon">The band</a>
         <a href="#catalog" class="whitespace-nowrap hover:text-beacon">Unreleased</a>
         <a href="#artwork" class="whitespace-nowrap hover:text-beacon">Artwork</a>
@@ -81,20 +82,27 @@
       <div class="prose-archive mt-4 max-w-2xl">
         <p>
           Five recordings, posted one at a time over five months, each announced
-          with a short note on the band&rsquo;s own site. Everything below still
-          streams from the original
+          with a short note on the band&rsquo;s own site. The text under each
+          title is the original post, word for word.
+        </p>
+        <p>
+          Four of the five now play from this site directly. They are the
+          band&rsquo;s own mixes &mdash; the same files that were uploaded in
+          2016, not re-encodes pulled back down &mdash; and each still links to
+          its
           <a
             href="https://soundcloud.com/reachableheights"
             class="text-beacon underline underline-offset-2 hover:text-white"
             rel="noopener"
-            >SoundCloud account</a
+            >SoundCloud</a
           >
-          &mdash; these are the real uploads from 2016, not re-encodes. The text
-          under each title is the original post, word for word.
+          original. <em class="not-italic text-zinc-300">Great Are You Lord</em>
+          is a cover of someone else&rsquo;s song and stays where the band put
+          it.
         </p>
       </div>
 
-      <div class="mt-10 space-y-10">
+      <div class="mt-10 space-y-10" data-playlist data-record="2016">
         <article>
           <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
             <h3 class="font-display text-xl font-bold text-zinc-100">
@@ -117,90 +125,110 @@
           ></iframe>
         </article>
 
-        <article>
-          <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-            <h3 class="font-display text-xl font-bold text-zinc-100">
-              Hold Me Near <span class="font-normal text-zinc-500">[Demo]</span>
-            </h3>
-            <span class="font-mono text-xs text-zinc-500">June 26, 2016</span>
+        <article
+          class="track"
+          data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/hold-me-near.mp3"
+          data-title="Hold Me Near"
+          data-seconds="298"
+        >
+          <div class="flex items-start gap-4">
+            <button type="button" class="track-btn" aria-label="Play Hold Me Near"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="track-title">
+                  Hold Me Near <span class="font-normal text-zinc-500">[Demo]</span>
+                </h3>
+                <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>4:58 &middot; June 26, 2016</span>
+              </div>
+              <p class="quoted mt-3">Our first original! We hope you enjoy!</p>
+              <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              <p class="mt-3 font-mono text-xs">
+                <a href="https://soundcloud.com/reachableheights/hold-me-near" rel="noopener" class="text-zinc-500 underline underline-offset-2 hover:text-beacon">on SoundCloud</a>
+              </p>
+            </div>
           </div>
-          <p class="quoted mt-3">Our first original! We hope you enjoy!</p>
-          <iframe
-            title="Hold Me Near by Reachable Heights"
-            class="mt-4 w-full rounded border border-zinc-800"
-            height="400"
-            scrolling="no"
-            frameborder="no"
-            loading="lazy"
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/reachableheights/hold-me-near&color=%231cbac8&visual=true&show_artwork=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false"
-          ></iframe>
         </article>
 
-        <article>
-          <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-            <h3 class="font-display text-xl font-bold text-zinc-100">
-              I Will Walk (Psalm 23)
-              <span class="font-normal text-zinc-500">[Demo]</span>
-            </h3>
-            <span class="font-mono text-xs text-zinc-500">August 2, 2016</span>
+        <article
+          class="track"
+          data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/i-will-walk-psalm-23.mp3"
+          data-title="I Will Walk (Psalm 23)"
+          data-seconds="192"
+        >
+          <div class="flex items-start gap-4">
+            <button type="button" class="track-btn" aria-label="Play I Will Walk (Psalm 23)"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="track-title">
+                  I Will Walk (Psalm 23)
+                  <span class="font-normal text-zinc-500">[Demo]</span>
+                </h3>
+                <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>3:12 &middot; August 2, 2016</span>
+              </div>
+              <p class="quoted mt-3">
+                A new demo is available; it&rsquo;s a song based on a reading of
+                Psalm 23. Checkout our SoundCloud account to listen.
+              </p>
+              <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              <p class="mt-3 font-mono text-xs">
+                <a href="https://soundcloud.com/reachableheights/i-will-walk-psalm-23" rel="noopener" class="text-zinc-500 underline underline-offset-2 hover:text-beacon">on SoundCloud</a>
+              </p>
+            </div>
           </div>
-          <p class="quoted mt-3">
-            A new demo is available; it&rsquo;s a song based on a reading of
-            Psalm 23. Checkout our SoundCloud account to listen.
-          </p>
-          <iframe
-            title="I Will Walk (Psalm 23) by Reachable Heights"
-            class="mt-4 w-full rounded border border-zinc-800"
-            height="400"
-            scrolling="no"
-            frameborder="no"
-            loading="lazy"
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/reachableheights/i-will-walk-psalm-23&color=%231cbac8&visual=true&show_artwork=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false"
-          ></iframe>
         </article>
 
-        <article>
-          <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-            <h3 class="font-display text-xl font-bold text-zinc-100">
-              The Voice Inside <span class="font-normal text-zinc-500">[Demo]</span>
-            </h3>
-            <span class="font-mono text-xs text-zinc-500">September 17, 2016</span>
+        <article
+          class="track"
+          data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/the-voice-inside.mp3"
+          data-title="The Voice Inside"
+          data-seconds="320"
+        >
+          <div class="flex items-start gap-4">
+            <button type="button" class="track-btn" aria-label="Play The Voice Inside"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="track-title">
+                  The Voice Inside <span class="font-normal text-zinc-500">[Demo]</span>
+                </h3>
+                <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>5:20 &middot; September 17, 2016</span>
+              </div>
+              <p class="quoted mt-3">
+                A new demo available! Checkout our SoundCloud account to listen to
+                it!
+              </p>
+              <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              <p class="mt-3 font-mono text-xs">
+                <a href="https://soundcloud.com/reachableheights/the-voice-inside" rel="noopener" class="text-zinc-500 underline underline-offset-2 hover:text-beacon">on SoundCloud</a>
+              </p>
+            </div>
           </div>
-          <p class="quoted mt-3">
-            A new demo available! Checkout our SoundCloud account to listen to
-            it!
-          </p>
-          <iframe
-            title="The Voice Inside by Reachable Heights"
-            class="mt-4 w-full rounded border border-zinc-800"
-            height="400"
-            scrolling="no"
-            frameborder="no"
-            loading="lazy"
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/reachableheights/the-voice-inside&color=%231cbac8&visual=true&show_artwork=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false"
-          ></iframe>
         </article>
 
-        <article>
-          <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-            <h3 class="font-display text-xl font-bold text-zinc-100">
-              Bring Me Heaven <span class="font-normal text-zinc-500">[Demo]</span>
-            </h3>
-            <span class="font-mono text-xs text-zinc-500">October 14, 2016</span>
+        <article
+          class="track"
+          data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/bring-me-heaven.mp3"
+          data-title="Bring Me Heaven"
+          data-seconds="240"
+        >
+          <div class="flex items-start gap-4">
+            <button type="button" class="track-btn" aria-label="Play Bring Me Heaven"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="track-title">
+                  Bring Me Heaven <span class="font-normal text-zinc-500">[Demo]</span>
+                </h3>
+                <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>4:00 &middot; October 14, 2016</span>
+              </div>
+              <p class="quoted mt-3">
+                Our latest demo, Bring Me Heaven, is available for listening on our
+                SoundCloud account. Check it out!
+              </p>
+              <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              <p class="mt-3 font-mono text-xs">
+                <a href="https://soundcloud.com/reachableheights/bring-me-heaven" rel="noopener" class="text-zinc-500 underline underline-offset-2 hover:text-beacon">on SoundCloud</a>
+              </p>
+            </div>
           </div>
-          <p class="quoted mt-3">
-            Our latest demo, Bring Me Heaven, is available for listening on our
-            SoundCloud account. Check it out!
-          </p>
-          <iframe
-            title="Bring Me Heaven by Reachable Heights"
-            class="mt-4 w-full rounded border border-zinc-800"
-            height="400"
-            scrolling="no"
-            frameborder="no"
-            loading="lazy"
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/reachableheights/bring-me-heaven&color=%231cbac8&visual=true&show_artwork=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false"
-          ></iframe>
         </article>
       </div>
 
@@ -210,6 +238,107 @@
         were filed under a category called <em>Worship EP</em>. That record was
         never finished.
       </p>
+    </section>
+
+    <!-- ── never posted ───────────────────────────────────────────────── -->
+    <section id="unreleased" class="scroll-mt-16 border-y border-zinc-800 bg-black py-14">
+      <div class="wrap">
+        <p class="kicker">Finished, and never posted</p>
+        <h2 class="section-h mt-2">Six more</h2>
+        <div class="prose-archive mt-4 max-w-2xl">
+          <p>
+            The five above are everything the band ever announced. Behind them
+            sat a folder of mixes that were finished and then simply left there.
+            Six are complete recordings &mdash; full arrangements that fade out
+            at the end rather than stopping mid-idea &mdash; and they are online
+            here for the first time, in 2026, straight off the band&rsquo;s own
+            bounces.
+          </p>
+          <p>
+            Nothing has been remastered, retouched, or re-encoded. The levels
+            jump around between them, because they were mixed months apart and
+            never sequenced as a record. There are no release dates to give:
+            these were never released.
+          </p>
+        </div>
+
+        <div class="mt-10" data-playlist data-record="Never posted">
+          <article class="track border-t border-zinc-800" data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/in-my-refuge.mp3" data-title="In My Refuge" data-seconds="277">
+            <div class="flex items-start gap-4 py-4">
+              <button type="button" class="track-btn" aria-label="Play In My Refuge"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-baseline justify-between gap-4">
+                  <h3 class="track-title">In My Refuge</h3>
+                  <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>4:37</span>
+                </div>
+                <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              </div>
+            </div>
+          </article>
+          <article class="track border-t border-zinc-800" data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/prison-break.mp3" data-title="Prison Break" data-seconds="222">
+            <div class="flex items-start gap-4 py-4">
+              <button type="button" class="track-btn" aria-label="Play Prison Break"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-baseline justify-between gap-4">
+                  <h3 class="track-title">Prison Break</h3>
+                  <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>3:42</span>
+                </div>
+                <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              </div>
+            </div>
+          </article>
+          <article class="track border-t border-zinc-800" data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/the-king-of-life.mp3" data-title="The King of Life" data-seconds="239">
+            <div class="flex items-start gap-4 py-4">
+              <button type="button" class="track-btn" aria-label="Play The King of Life"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-baseline justify-between gap-4">
+                  <h3 class="track-title">The King of Life</h3>
+                  <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>3:59</span>
+                </div>
+                <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              </div>
+            </div>
+          </article>
+          <article class="track border-t border-zinc-800" data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/tremble.mp3" data-title="Tremble" data-seconds="384">
+            <div class="flex items-start gap-4 py-4">
+              <button type="button" class="track-btn" aria-label="Play Tremble"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-baseline justify-between gap-4">
+                  <h3 class="track-title">Tremble</h3>
+                  <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>6:24</span>
+                </div>
+                <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              </div>
+            </div>
+          </article>
+          <article class="track border-t border-zinc-800" data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/push-acoustic.mp3" data-title="Push (Acoustic)" data-seconds="353">
+            <div class="flex items-start gap-4 py-4">
+              <button type="button" class="track-btn" aria-label="Play Push (Acoustic)"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-baseline justify-between gap-4">
+                  <h3 class="track-title">Push (Acoustic)</h3>
+                  <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>5:53</span>
+                </div>
+                <p class="mt-2 text-xs leading-relaxed text-zinc-500">There is a full-band mix of <em class="not-italic text-zinc-400">Push</em> in the sessions too. This is the acoustic one.</p>
+                <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              </div>
+            </div>
+          </article>
+          <article class="track border-y border-zinc-800" data-src="https://martinezmediaclients.blob.core.windows.net/reachableheights/tracks/silent-night.mp3" data-title="Silent Night" data-seconds="171">
+            <div class="flex items-start gap-4 py-4">
+              <button type="button" class="track-btn" aria-label="Play Silent Night"><svg viewBox="0 0 24 24" class="i-play h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg viewBox="0 0 24 24" class="i-pause hidden h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg></button>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-baseline justify-between gap-4">
+                  <h3 class="track-title">Silent Night</h3>
+                  <span class="shrink-0 font-mono text-xs tabular-nums text-zinc-500"><span class="track-elapsed"></span>2:51</span>
+                </div>
+                <p class="mt-2 text-xs leading-relaxed text-zinc-500">The only track ever recorded for the <a href="#artwork" class="text-beacon underline underline-offset-2 hover:text-white">Christmas EP</a>. The carol is public domain; the arrangement and the recording are theirs.</p>
+                <div class="track-seek mt-3 hidden" aria-hidden="true"><div class="track-fill"></div></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <!-- ── the band ───────────────────────────────────────────────────── -->
@@ -259,11 +388,12 @@
     <!-- ── unreleased ─────────────────────────────────────────────────── -->
     <section id="catalog" class="scroll-mt-16 wrap py-14">
       <p class="kicker">2016 &ndash; 2020</p>
-      <h2 class="section-h mt-2">Everything that was never released</h2>
+      <h2 class="section-h mt-2">Everything else</h2>
       <div class="prose-archive mt-4 max-w-2xl">
         <p>
-          The five tracks above are the entire public output. Behind them sits
-          roughly 54&nbsp;GB of recording sessions holding
+          Eleven recordings are playable on this page &mdash; the five from 2016
+          and the six above. Behind them sits roughly 54&nbsp;GB of recording
+          sessions holding
           <strong class="text-zinc-200">twenty-nine original songs</strong> and
           <strong class="text-zinc-200">twenty-one covers</strong> that were
           written, tracked, and in most cases mixed &mdash; and then never put
@@ -271,7 +401,10 @@
         </p>
         <p>
           The titles are listed here because a title is the last part of a song
-          to disappear. The recordings themselves are staying private.
+          to disappear. What is <strong class="text-zinc-200">not</strong> here
+          stays private: click tracks, guide vocals, half-mixes, working drafts,
+          and the covers, which are somebody else&rsquo;s songs. Titles marked
+          <span class="text-beacon">&#9654;</span> are playable above.
         </p>
       </div>
 
@@ -280,15 +413,15 @@
       </h3>
       <ul class="mt-4 grid grid-cols-1 gap-x-8 gap-y-1 text-[0.95rem] text-zinc-400 sm:grid-cols-2">
         <li>We Worship You <span class="font-mono text-xs text-zinc-600">2016</span></li>
-        <li>In My Refuge <span class="font-mono text-xs text-zinc-600">2016</span></li>
+        <li><span class="text-beacon">&#9654;</span> In My Refuge <span class="font-mono text-xs text-zinc-600">2016</span></li>
         <li>My Darkest Days <span class="font-mono text-xs text-zinc-600">2016</span></li>
-        <li>Prison Break <span class="font-mono text-xs text-zinc-600">2016</span></li>
-        <li>The King of Life <span class="font-mono text-xs text-zinc-600">2016</span></li>
+        <li><span class="text-beacon">&#9654;</span> Prison Break <span class="font-mono text-xs text-zinc-600">2016</span></li>
+        <li><span class="text-beacon">&#9654;</span> The King of Life <span class="font-mono text-xs text-zinc-600">2016</span></li>
         <li>Fearless <span class="font-mono text-xs text-zinc-600">2016</span></li>
-        <li>Tremble <span class="font-mono text-xs text-zinc-600">2017</span></li>
+        <li><span class="text-beacon">&#9654;</span> Tremble <span class="font-mono text-xs text-zinc-600">2017</span></li>
         <li>No, We Won&rsquo;t Forget <span class="font-mono text-xs text-zinc-600">2017</span></li>
-        <li>The Voice Inside <span class="font-mono text-xs text-zinc-600">2017</span></li>
-        <li>I Will Walk <span class="font-mono text-xs text-zinc-600">2017</span></li>
+        <li><span class="text-beacon">&#9654;</span> The Voice Inside <span class="font-mono text-xs text-zinc-600">2017</span></li>
+        <li><span class="text-beacon">&#9654;</span> I Will Walk <span class="font-mono text-xs text-zinc-600">2017</span></li>
         <li>Hope is Rising <span class="font-mono text-xs text-zinc-600">2017</span></li>
         <li>Seek Your Name <span class="font-mono text-xs text-zinc-600">2017</span></li>
         <li>Your Grace (Is All I Need) <span class="font-mono text-xs text-zinc-600">2017</span></li>
@@ -299,14 +432,14 @@
         <li>The Blind Ballad <span class="font-mono text-xs text-zinc-600">2019</span></li>
         <li>My All (One True God) <span class="font-mono text-xs text-zinc-600">2019</span></li>
         <li>This Heart is Yours <span class="font-mono text-xs text-zinc-600">2019</span></li>
-        <li>Bring Me Heaven <span class="font-mono text-xs text-zinc-600">2019</span></li>
+        <li><span class="text-beacon">&#9654;</span> Bring Me Heaven <span class="font-mono text-xs text-zinc-600">2019</span></li>
         <li>Everything to Everyone <span class="font-mono text-xs text-zinc-600">2019</span></li>
         <li>Exile <span class="font-mono text-xs text-zinc-600">2019</span></li>
-        <li>Hold Me Near <span class="font-mono text-xs text-zinc-600">2019</span></li>
+        <li><span class="text-beacon">&#9654;</span> Hold Me Near <span class="font-mono text-xs text-zinc-600">2019</span></li>
         <li>We Call On You <span class="font-mono text-xs text-zinc-600">2019</span></li>
         <li>Crush <span class="font-mono text-xs text-zinc-600">2019</span></li>
         <li>Push <span class="font-mono text-xs text-zinc-600">2019</span></li>
-        <li>Push (Acoustic) <span class="font-mono text-xs text-zinc-600">2019</span></li>
+        <li><span class="text-beacon">&#9654;</span> Push (Acoustic) <span class="font-mono text-xs text-zinc-600">2019</span></li>
         <li>We Are Home <span class="font-mono text-xs text-zinc-600">2020</span></li>
       </ul>
       <p class="mt-3 font-mono text-xs text-zinc-600">
@@ -388,8 +521,9 @@
               class="w-full rounded border border-zinc-800"
             />
             <figcaption class="mt-2 font-mono text-xs text-zinc-500">
-              Christmas EP &mdash; never released; one track, Silent Night, was
-              recorded
+              Christmas EP &mdash; never released; one track,
+              <a href="#unreleased" class="text-beacon underline underline-offset-2 hover:text-white">Silent Night</a>,
+              was recorded
             </figcaption>
           </figure>
         </div>
@@ -463,16 +597,27 @@
             unreleased songs was read off the recording sessions themselves.
           </p>
           <p>
-            The audio is not hosted here. Every player above is an embed pointing
-            at the band&rsquo;s own
+            The audio changed in 2026. Ten of the eleven recordings now stream
+            from this site&rsquo;s own storage, so they no longer depend on
+            anyone else staying in business &mdash; they are the band&rsquo;s own
+            mixes, uploaded unaltered from the session archive rather than pulled
+            back down off the web. Each of the four 2016 originals still links to
+            its post on the band&rsquo;s
             <a
               href="https://soundcloud.com/reachableheights"
               class="text-beacon underline underline-offset-2 hover:text-white"
               rel="noopener"
               >SoundCloud account</a
-            >, which is still online and still owned by the band. If it ever goes
-            away, these players will go with it &mdash; that is the honest state
-            of it.
+            >, which is still online and still theirs.
+            <em class="not-italic text-zinc-300">Great Are You Lord</em> is the
+            one exception: no local copy of that mix survives, and it is a cover
+            of someone else&rsquo;s song, so it remains an embed. If SoundCloud
+            goes away, that one player goes with it.
+          </p>
+          <p>
+            The six recordings under &ldquo;Six more&rdquo; had never been
+            published anywhere before this page. They are here because the
+            alternative was a hard drive.
           </p>
           <p>
             Nothing was invented and nothing was corrected. Where a sentence
@@ -518,5 +663,42 @@
         </p>
       </div>
     </footer>
+
+    <div
+      id="player"
+      aria-hidden="true"
+      class="fixed inset-x-0 bottom-0 z-50 translate-y-full border-t border-beacon-deep bg-zinc-950/95 backdrop-blur transition-transform duration-300"
+    >
+      <div class="wrap flex items-center gap-3 py-3 sm:gap-4">
+        <div class="flex items-center gap-1">
+          <button type="button" id="pl-prev" class="pl-btn hidden sm:grid" aria-label="Previous track">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M7 6h2v12H7zm3 6 8 6V6z" /></svg>
+          </button>
+          <button type="button" id="pl-play" class="pl-btn pl-btn-main" aria-label="Play">
+            <svg viewBox="0 0 24 24" class="i-play h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+            <svg viewBox="0 0 24 24" class="i-pause hidden h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z" /></svg>
+          </button>
+          <button type="button" id="pl-next" class="pl-btn hidden sm:grid" aria-label="Next track">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M15 6h2v12h-2zM6 18l8-6-8-6z" /></svg>
+          </button>
+        </div>
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-sm">
+            <span id="pl-title" class="font-display font-bold text-zinc-100">&nbsp;</span>
+            <span id="pl-record" class="font-mono text-xs uppercase tracking-widest text-zinc-500"></span>
+          </p>
+          <div class="mt-1.5 flex items-center gap-2">
+            <span id="pl-cur" class="w-9 shrink-0 text-right font-mono text-[11px] tabular-nums text-zinc-500">0:00</span>
+            <input id="pl-seek" class="seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Seek" />
+            <span id="pl-dur" class="w-9 shrink-0 font-mono text-[11px] tabular-nums text-zinc-500">0:00</span>
+          </div>
+        </div>
+        <button type="button" id="pl-close" class="pl-btn" aria-label="Close player">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="m19 6.4-1.4-1.4-5.6 5.6-5.6-5.6L5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6z" /></svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="/player.js" defer></script>
   </body>
 </html>
