@@ -4,7 +4,7 @@ A static, single-page archive of **Reachable Heights**, a praise and worship ban
 from Ludington, Michigan, active roughly 2016–2020. Built in 2026. The band is
 not active and this is not their original site.
 
-Members: **Jessica Hein** (lead vocals), **Andrew Lucero** (bass, guitar),
+Members: **Jessica Hein** (lead vocals), **Andrew Lucero** (bass, guitar, backup vocals),
 **Brandon Martinez** (guitar, bass, drums, keys, recording and production).
 
 ## The critical rule: this is an archive, and it says so
